@@ -1,0 +1,201 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-11T14:01:17.221Z",
+        "line": 3,
+        "name": "Validar mensagem de registros não encontrados",
+        "description": "",
+        "id": "automação-testes;validar-mensagem-de-registros-não-encontrados",
+        "after": [
+          {
+            "result": {
+              "duration": 67451092,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BlogDoAgiStepDefinitions.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3490060549,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "que estou no blog da agi",
+            "match": {
+              "location": "BlogDoAgiStepDefinitions.que_estou_no_blog_da_agi()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 100334398,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que clico na lupa de pesquisa",
+            "match": {
+              "location": "BlogDoAgiStepDefinitions.que_clico_na_lupa_de_pesquisa()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70468561,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "pesquiso pelo registro \"$@#$%$%@#$@\u0026%*\u0026*\u0026\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$@#$%$%@#$@\u0026%*\u0026*\u0026\"",
+                  "offset": 23
+                }
+              ],
+              "location": "BlogDoAgiStepDefinitions.pesquiso_pelo_registro(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1138529376,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clico no botão pesquisar",
+            "match": {
+              "location": "BlogDoAgiStepDefinitions.clico_no_botão_pesquisar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27465912,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "deve retornar mensagem \"Não encontramos nada para estes termos de busca. Tente novamente com palavras-chave diferentes.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Não encontramos nada para estes termos de busca. Tente novamente com palavras-chave diferentes.\"",
+                  "offset": 23
+                }
+              ],
+              "location": "BlogDoAgiStepDefinitions.deve_retornar_mensagem(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-11T14:01:22.118Z",
+        "line": 10,
+        "name": "Validar busca por texto",
+        "description": "",
+        "id": "automação-testes;validar-busca-por-texto",
+        "after": [
+          {
+            "result": {
+              "duration": 60528049,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BlogDoAgiStepDefinitions.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2910934433,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou no blog da agi",
+            "match": {
+              "location": "BlogDoAgiStepDefinitions.que_estou_no_blog_da_agi()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 119353808,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que clico na lupa de pesquisa",
+            "match": {
+              "location": "BlogDoAgiStepDefinitions.que_clico_na_lupa_de_pesquisa()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99734583,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "pesquiso pelo registro \"Esquema funciona como uma pirâmide financeira e faz muita gente perder dinheiro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Esquema funciona como uma pirâmide financeira e faz muita gente perder dinheiro\"",
+                  "offset": 23
+                }
+              ],
+              "location": "BlogDoAgiStepDefinitions.pesquiso_pelo_registro(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1631186556,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "clico no botão pesquisar",
+            "match": {
+              "location": "BlogDoAgiStepDefinitions.clico_no_botão_pesquisar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23663796,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "deve retornar registro com o título \"Por que o Grupo de Pix de 1 Real é uma cilada e você deve fugir dele\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Por que o Grupo de Pix de 1 Real é uma cilada e você deve fugir dele\"",
+                  "offset": 36
+                }
+              ],
+              "location": "BlogDoAgiStepDefinitions.deve_retornar_registro_com_o_título(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Automação testes",
+    "description": "",
+    "id": "automação-testes",
+    "keyword": "Feature",
+    "uri": "classpath:blogdoagi/pesquisa.feature",
+    "tags": []
+  }
+]
